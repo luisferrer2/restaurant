@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Palma | Caribbean Kitchen</title>
+  <link rel="stylesheet" href="restaurant.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="logo">La Palma<span class="logo-dot">.</span></div>
+      <ul class="nav-links">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#order">Order</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#order" class="nav-cta">Order Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#order">Order</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+    <div class="hero-blob blob-3"></div>
+
+    <div class="hero-content reveal">
+      <div class="hero-tag">
+        <span class="tag-dot"></span> Open Today · 12pm – 10pm
+      </div>
+      <h1>
+        Real <em>Caribbean</em><br>
+        Flavors, Fresh<br>
+        Every Day.
+      </h1>
+      <p>From slow-cooked ropa vieja to crispy tostones — we bring the soul of the Caribbean to your table.</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn-primary">
+          <i data-lucide="utensils"></i> See the Menu
+        </a>
+        <a href="#order" class="btn-secondary">
+          Order Online <i data-lucide="arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal-right">
+      <div class="dish-card main-dish">
+        <div class="dish-emoji">🍛</div>
+        <div class="dish-label">Arroz con Pollo</div>
+        <div class="dish-price">$16</div>
+      </div>
+      <div class="dish-card side-dish-1">
+        <div class="dish-emoji">🫔</div>
+        <div class="dish-label">Arepas</div>
+        <div class="dish-price">$8</div>
+      </div>
+      <div class="dish-card side-dish-2">
+        <div class="dish-emoji">🍹</div>
+        <div class="dish-label">Limonada de Coco</div>
+        <div class="dish-price">$6</div>
+      </div>
+      <div class="hero-badge">
+        <span>🌿</span> 100% Fresh
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar reveal">
+    <div class="stat-item">
+      <strong>12+</strong><span>Signature dishes</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <strong>4.9★</strong><span>On Google</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <strong>8 yrs</strong><span>Serving the city</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <strong>30 min</strong><span>Avg delivery</span>
+    </div>
+  </div>
+
+  <!-- MENU -->
+  <section id="menu" class="section">
+    <div class="section-header reveal">
+      <p class="section-tag">What we cook</p>
+      <h2 class="section-title">Our <em>Menu</em></h2>
+    </div>
+
+    <!-- Category tabs -->
+    <div class="menu-tabs reveal">
+      <button class="tab active" data-cat="all">All</button>
+      <button class="tab" data-cat="mains">Mains</button>
+      <button class="tab" data-cat="sides">Sides</button>
+      <button class="tab" data-cat="drinks">Drinks</button>
+      <button class="tab" data-cat="desserts">Desserts</button>
+    </div>
+
+    <div class="menu-grid" id="menuGrid">
+
+      <div class="menu-card reveal" data-cat="mains">
+        <div class="menu-emoji">🍛</div>
+        <div class="menu-info">
+          <h3>Arroz con Pollo</h3>
+          <p>Slow-cooked chicken with saffron rice, peppers and sofrito</p>
+          <div class="menu-footer">
+            <span class="menu-price">$16</span>
+            <span class="menu-badge">Popular</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card reveal" data-cat="mains">
+        <div class="menu-emoji">🥩</div>
+        <div class="menu-info">
+          <h3>Ropa Vieja</h3>
+          <p>Shredded beef braised in tomato, cumin & olives. Classic Cuban.</p>
+          <div class="menu-footer">
+            <span class="menu-price">$18</span>
+            <span class="menu-badge">Chef's pick</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card reveal" data-cat="mains">
+        <div class="menu-emoji">🦐</div>
+        <div class="menu-info">
+          <h3>Camarones al Ajillo</h3>
+          <p>Garlic butter shrimp with chili, lime and white rice</p>
+          <div class="menu-footer">
+            <span class="menu-price">$20</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card reveal" data-cat="mains">
+        <div class="menu-emoji">🌮</div>
+        <div class="menu-info">
+          <h3>Bandeja Paisa</h3>
+          <p>Red beans, rice, chicharrón, egg, plantain and avocado</p>
+          <div class="menu-footer">
+            <span class="menu-price">$22</span>
+            <span class="menu-badge">Fan favorite</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card reveal" data-cat="sides">
+        <div class="menu-emoji">🍌</div>
+        <div class="menu-info">
+          <h3>Tostones</h3>
+          <p>Twice-fried green plantains with garlic aioli dip</p>
+          <div class="menu-footer">
+            <span class="menu-price">$7</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card reveal" data-cat="sides">
+        <div class="menu-emoji">🫔</div>
+        <div class="menu-info">
+          <h3>Arepas de Choclo</h3>
+          <p>Sweet corn arepas with queso fresco and butter</p>
+          <div class="menu-footer">
+            <span class="menu-price">$8</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card reveal" data-cat="drinks">
+        <div class="menu-emoji">🍹</div>
+        <div class="menu-info">
+          <h3>Limonada de Coco</h3>
+          <p>Fresh lemon juice blended with coconut cream and sugar</p>
+          <div class="menu-footer">
+            <span class="menu-price">$6</span>
+            <span class="menu-badge">Popular</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card reveal" data-cat="drinks">
+        <div class="menu-emoji">🧃</div>
+        <div class="menu-info">
+          <h3>Agua de Panela</h3>
+          <p>Traditional Colombian brown sugar cane drink, hot or cold</p>
+          <div class="menu-footer">
+            <span class="menu-price">$4</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card reveal" data-cat="desserts">
+        <div class="menu-emoji">🍮</div>
+        <div class="menu-info">
+          <h3>Flan de Coco</h3>
+          <p>Creamy coconut flan with caramel and toasted coconut flakes</p>
+          <div class="menu-footer">
+            <span class="menu-price">$7</span>
+            <span class="menu-badge">Chef's pick</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card reveal" data-cat="desserts">
+        <div class="menu-emoji">🍌</div>
+        <div class="menu-info">
+          <h3>Plátanos en Tentación</h3>
+          <p>Ripe plantains caramelized in brown sugar, cinnamon and butter</p>
+          <div class="menu-footer">
+            <span class="menu-price">$6</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about-section reveal">
+    <div class="about-visual">
+      <div class="about-card">
+        <div class="about-emoji">🌴</div>
+        <p>"Cooking is how we keep our roots alive."</p>
+        <span>— María, Head Chef</span>
+      </div>
+      <div class="about-blob"></div>
+    </div>
+    <div class="about-text">
+      <p class="section-tag">Our story</p>
+      <h2 class="section-title">Rooted in <em>Flavor</em></h2>
+      <p>La Palma started as a family recipe passed down through three generations. What began as Sunday lunches in Barranquilla became a restaurant built on the belief that food should taste like home.</p>
+      <p>Every dish we make is prepared fresh daily — no shortcuts, no frozen ingredients. Just real Caribbean cooking with real love.</p>
+      <div class="about-features">
+        <div class="feature">
+          <i data-lucide="leaf"></i>
+          <span>Fresh daily ingredients</span>
+        </div>
+        <div class="feature">
+          <i data-lucide="heart"></i>
+          <span>Family recipes since 1992</span>
+        </div>
+        <div class="feature">
+          <i data-lucide="truck"></i>
+          <span>Delivery in 30 minutes</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORDER -->
+  <section id="order" class="order-section">
+    <div class="order-inner">
+      <div class="order-text reveal">
+        <p class="section-tag">Skip the wait</p>
+        <h2 class="section-title">Order <em>Online</em></h2>
+        <p>Place your order for pickup or delivery. We'll have it ready hot and fresh.</p>
+        <div class="order-badges">
+          <span>🏍️ Fast delivery</span>
+          <span>📦 Pickup available</span>
+          <span>💳 Card accepted</span>
+        </div>
+      </div>
+      <div class="order-form reveal">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="María García">
+        </div>
+        <div class="form-group">
+          <label>Phone</label>
+          <input type="tel" placeholder="+1 555 0000">
+        </div>
+        <div class="form-group">
+          <label>Order Type</label>
+          <select>
+            <option>🏍️ Delivery</option>
+            <option>📦 Pickup</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Your Order</label>
+          <textarea placeholder="e.g. 1x Arroz con Pollo, 2x Tostones, 1x Limonada de Coco..."></textarea>
+        </div>
+        <button class="btn-primary btn-full" id="orderBtn">
+          <i data-lucide="shopping-bag"></i> Place Order
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / FOOTER -->
+  <footer id="contact">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">La Palma<span>.</span></div>
+        <p>Caribbean Kitchen · Est. 2016</p>
+      </div>
+      <div class="footer-info">
+        <div class="footer-item">
+          <i data-lucide="map-pin"></i>
+          <span>123 Coconut Ave, Miami FL</span>
+        </div>
+        <div class="footer-item">
+          <i data-lucide="clock"></i>
+          <span>Mon–Sun · 12pm – 10pm</span>
+        </div>
+        <div class="footer-item">
+          <i data-lucide="phone"></i>
+          <a href="tel:+15550000">+1 555 0000</a>
+        </div>
+        <div class="footer-item">
+          <i data-lucide="mail"></i>
+          <a href="mailto:hello@lapalma.com">hello@lapalma.com</a>
+        </div>
+      </div>
+      <div class="footer-copy">© 2025 La Palma. All rights reserved.</div>
+    </div>
+  </footer>
+
+<script src="restaurant.js"></script>
+</body>
+</html>
